@@ -8,7 +8,13 @@ from .picker import Picker
 
 
 def main() -> None:
-    """
+    """Learning the argusment parser
+    add the path/name of an image
+    add a path/name of the output file that will contain the colors from the image
+
+    Note -- there needs to be an index of location on the image to color in the output file
+
+    The Picker calls the module picker with a class called Picker.
 
     """
     parser = ArgumentParser()

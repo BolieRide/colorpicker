@@ -1,4 +1,5 @@
 """ identify colors in a picture
 
-long description goes here
+A (soon to be) nifty project that takes a picture, and then
+tell you what color is in the picture.
 """
