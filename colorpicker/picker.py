@@ -1,4 +1,4 @@
-"""a picker
+"""Input an image and output the color in English
 
 
 """
@@ -7,8 +7,6 @@ import sys
 class Picker:
     def __init__(self, filepath: str) -> None:
         """
-
-        @rtype: object
         """
         self.path = filepath
 
