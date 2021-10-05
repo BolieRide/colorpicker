@@ -3,6 +3,8 @@
 
 """
 import sys
+from PIL import Image
+import webcolors
 
 class Picker:
     def __init__(self, filepath: str) -> None:
