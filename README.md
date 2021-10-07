@@ -1,8 +1,17 @@
 # Color Picker
 
-A little python to select the color in an image.
+Input an image to provide what colors are 
+contained in it.
+This has been created to assist those who are color-blind 
+to know what colors are in a picture.
 
+## Install
+### Install from PyPI
+### Install from GitHub
 
-## This is just me playing with markdown
+## Usage
+### Command-Line Switches
+`example of  command line switches`
+### Imported into Your Project
 
-`single back quote looks cool`
+## Uninstall
