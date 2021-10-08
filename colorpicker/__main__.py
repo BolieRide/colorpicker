@@ -33,7 +33,8 @@ def main() -> None:
     else:
         output_file = sys.stdout
 
-    input_picker.find_colors(output_file)
+    input_picker.find_colors(output_file,propername=False)
+    # input_picker.find_colors(output_file)
 
 
 

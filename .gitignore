@@ -1,4 +1,9 @@
 /venv
 .idea
 Colorpicker_BolieRide.egg-info
+test.py
+colorpicker/__pycache__/
+colors.txt
+*.jpg
+*.png
 
