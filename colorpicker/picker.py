@@ -8,6 +8,8 @@ import webcolors
 import requests
 from bs4 import BeautifulSoup
 import html2text
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 class Picker:
     def __init__(self, filepath: str) -> None:
@@ -53,7 +55,7 @@ class Picker:
                 end = "*."
                 idx1 = color.index(start)
                 idx2 = color.index(end)
-                print(color[idx1 + len(start): idx2].strip("\n"))
+                color = (color[idx1 + len(start): idx2].strip("\n"))
             # if propername:
             #     if color.startswith("#"):
             #         continue

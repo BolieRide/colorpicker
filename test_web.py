@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 import html2text
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 url = "https://encycolorpedia.com/"
 hex = "#986532"
