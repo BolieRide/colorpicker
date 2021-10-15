@@ -5,6 +5,9 @@
 import sys
 from PIL import Image
 import webcolors
+import requests
+from bs4 import BeautifulSoup
+import html2text
 
 class Picker:
     def __init__(self, filepath: str) -> None:
@@ -12,6 +15,7 @@ class Picker:
         """
         self.path = filepath
         self.image = Image.open(self.path)
+        self.baseurl = "https://encycolorpedia.com/"
 
     @property
     def color_strings(self):
@@ -41,6 +45,10 @@ class Picker:
         for color in self.color_strings:
             if propername:
                 if color.startswith("#"):
-                    continue
+                    check = requests.get(self.baseurl +color.strip('#'), verify=False)
+                    soup = BeautifulSoup(check.text, 'html.parser')
+                    chunk = str(soup.find(id='information'))
+                    color = html2text.html2text(chunk)
+                    print(color)
             print(color, file=output)
 
