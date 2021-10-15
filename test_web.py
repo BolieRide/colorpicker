@@ -15,5 +15,5 @@ start = ".svg)"
 end ="*."
 idx1 = color.index(start)
 idx2 = color.index(end)
-print(color[idx1 + len(start) : idx2].strip("\n"))
+print(color[idx1 + len(start) : idx2].replace("\n"," "))
 

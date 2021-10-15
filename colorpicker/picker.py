@@ -55,7 +55,7 @@ class Picker:
                 end = "*."
                 idx1 = color.index(start)
                 idx2 = color.index(end)
-                color = (color[idx1 + len(start): idx2].strip("\n"))
+                color = (color[idx1 + len(start): idx2].replace("\n"," "))
             # if propername:
             #     if color.startswith("#"):
             #         continue
