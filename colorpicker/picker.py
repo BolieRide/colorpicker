@@ -49,6 +49,5 @@ class Picker:
                     soup = BeautifulSoup(check.text, 'html.parser')
                     chunk = str(soup.find(id='information'))
                     color = html2text.html2text(chunk)
-                    print(color)
             print(color, file=output)
 
