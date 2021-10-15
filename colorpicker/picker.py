@@ -32,6 +32,7 @@ class Picker:
             except ValueError as error:
                 r,g,b = rgb_colors
                 self._color_strings.append(f"#{r:02x}{g:02x}{b:02x}")
+
         return self._color_strings
 
     def find_colors(self, output, propername=True) -> None:
@@ -43,11 +44,20 @@ class Picker:
 
         output = output or sys.stdout
         for color in self.color_strings:
-            if propername:
-                if color.startswith("#"):
-                    check = requests.get(self.baseurl +color.strip('#'), verify=False)
-                    soup = BeautifulSoup(check.text, 'html.parser')
-                    chunk = str(soup.find(id='information'))
-                    color = html2text.html2text(chunk)
+            if color.startswith("#"):
+                check = requests.get(self.baseurl +color.strip('#'), verify=False)
+                soup = BeautifulSoup(check.text, 'html.parser')
+                chunk = str(soup.find(id='information'))
+                color = html2text.html2text(chunk)
+                start = ".svg)"
+                end = "*."
+                idx1 = color.index(start)
+                idx2 = color.index(end)
+                print(color[idx1 + len(start): idx2].strip("\n"))
+            # if propername:
+            #     if color.startswith("#"):
+            #         continue
+
+
             print(color, file=output)
 
