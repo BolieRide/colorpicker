@@ -2,6 +2,7 @@
 .idea
 Colorpicker_BolieRide.egg-info
 test.py
+test_pandas.py
 colorpicker/__pycache__/
 colors.txt
 *.jpg

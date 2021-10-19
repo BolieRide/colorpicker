@@ -5,7 +5,7 @@ import sys
 
 from argparse import ArgumentParser
 from .picker import Picker
-
+from datetime import datetime
 
 def main() -> None:
     """Learning the argusment parser
@@ -33,9 +33,9 @@ def main() -> None:
     else:
         output_file = sys.stdout
 
+    start = datetime.now()
     input_picker.find_colors(output_file,propername=False)
-    # input_picker.find_colors(output_file)
-
+    print("Elapsed: ", datetime.now() - start)
 
 
 if __name__ == '__main__':

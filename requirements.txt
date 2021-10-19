@@ -3,3 +3,5 @@ webcolors
 requests
 Beautifulsoup4
 html2text
+pandas
+lxml
