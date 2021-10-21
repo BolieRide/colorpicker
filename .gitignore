@@ -7,4 +7,6 @@ colorpicker/__pycache__/
 colors.txt
 *.jpg
 *.png
+*.csv
+*.html
 
