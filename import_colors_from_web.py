@@ -30,6 +30,7 @@ df2 = df[-1]
 df2.reset_index(drop=True)
 df2.columns = list_header
 df2 = df2.iloc[1:,:]
+df2 = df2.replace(['\ufffd'], '-')
 df2.pop(' Colour')
 df2.pop(' Rackham')
 df2.pop(' INSTAR Vintage')
