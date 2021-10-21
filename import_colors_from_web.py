@@ -30,5 +30,11 @@ df2 = df[-1]
 df2.reset_index(drop=True)
 df2.columns = list_header
 df2 = df2.iloc[1:,:]
+df2.pop(' Colour')
+df2.pop(' Rackham')
+df2.pop(' INSTAR Vintage')
+df2.pop(' INSTAR 6')
+df2.set_index(df2.pop(' Hex Code'), inplace=True)
+df2.reset_index(inplace=True)
 print(df2)
 df2.to_csv('dakka.csv')
