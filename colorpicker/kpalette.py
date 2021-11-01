@@ -42,11 +42,13 @@ def color_palette_from_image(
     #    tell Numpy that the values in the array should be interpreted as floats.
 
     colors = np.array([color for count, color in image.getcolors(npixels)], dtype=float)
+    # print(colors)
 
     # This looks too simple to work!  We feed our prepared colors to the kmeans
     # function and tell it to cluster around `ncolors`.
 
     centers, mean_distance = kmeans(colors, ncolors)
+    # print(centers)
 
     # We want to return something that looks like the input, a list of color tuples,
     # so we will iterate thru `centers`, which is Numpy array of float 4-tuples.
@@ -54,7 +56,6 @@ def color_palette_from_image(
     palette = []
     for color in centers.round().astype(int).tolist():
         palette.append(tuple(color))
-
     return palette
 
 

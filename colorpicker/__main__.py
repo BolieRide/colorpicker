@@ -6,6 +6,7 @@ import sys
 from argparse import ArgumentParser
 from .picker import Picker
 from datetime import datetime
+from .paint import Paint
 
 def main() -> None:
     """Learning the argusment parser
@@ -23,7 +24,8 @@ def main() -> None:
     parser.add_argument("--output-file", "-o", type=str, help="Path to write output colors",default=None)
 
     args = parser.parse_args()
-
+    Paint.create_catalog('D:\PDM_Class\colorpicker\colorpicker\data\dakka.csv')
+    exit()
     print(args)
 
     input_picker = Picker(args.input_image)
