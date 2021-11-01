@@ -24,7 +24,9 @@ def main() -> None:
     parser.add_argument("--output-file", "-o", type=str, help="Path to write output colors",default=None)
 
     args = parser.parse_args()
-    Paint.create_catalog('D:\PDM_Class\colorpicker\colorpicker\data\dakka.csv')
+    catalog = Paint.create_catalog('D:\PDM_Class\colorpicker\colorpicker\data\dakka.csv')
+    for k,v in catalog.items():
+        print(k, v)
     exit()
     print(args)
 
