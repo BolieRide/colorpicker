@@ -99,6 +99,6 @@ class Picker:
         output = output or sys.stdout
         for color in self.color_names:
 
-        # print(color, file=output)
-            print(color)
+            print(color, file=output)
+        # print(color)
 
