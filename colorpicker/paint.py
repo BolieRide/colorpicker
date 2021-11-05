@@ -9,16 +9,17 @@ class Paint:
 
     """
     @classmethod
-    def create_catalog(cls, path: Union[Path, str] = None):
+    def create_catalog(cls, path: Union[Path, str] = None) -> dict:
         path = Path(path or paint_data)
         catalog = {}
         rows = list(csv.reader(path.open()))
+        header = rows[0]
         for row in rows[1:]:
             idx, color, *names = row
             for name in names:
                 if name == '-':
                     continue
-                catalog.setdefault(color, []).append(cls(color, name, 'food'))
+                catalog.setdefault(color, []).append(cls(color, name, idx))
         return catalog
 
 

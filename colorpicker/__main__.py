@@ -25,9 +25,9 @@ def main() -> None:
 
     args = parser.parse_args()
     catalog = Paint.create_catalog('D:\PDM_Class\colorpicker\colorpicker\data\dakka.csv')
-    for k,v in catalog.items():
-        print(k, v)
-    exit()
+    # for k,v in catalog.items():
+    #     print(k, v)
+    # exit()
     print(args)
 
     input_picker = Picker(args.input_image)

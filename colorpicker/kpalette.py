@@ -16,7 +16,7 @@ import numpy as np
 
 
 def color_palette_from_image(
-    image: Image, ncolors: int = 16
+    image: Image, ncolors: int = 64
 ) -> list[tuple[int, int, int, int]]:
     """Computes a color palette based on color value clusters in the input image.
 
