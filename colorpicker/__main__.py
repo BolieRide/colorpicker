@@ -22,7 +22,7 @@ def main() -> None:
 
     parser.add_argument("--input-image", "-i", type=str, help="Path to the input image.",default=None )
     parser.add_argument("--output-file", "-o", type=str, help="Path to write output colors",default=None)
-    parser.add_argument("--number-of-colors", "-n", type=int, default=256)
+    parser.add_argument("--number-of-colors", "-n", type=int, default=16)
 
     args = parser.parse_args()
 
@@ -51,7 +51,9 @@ def main() -> None:
         if catalog.get(hex):
             print(catalog.get(hex), " is in dictionary")
         else:
-            r2, g2, b2 =
+            # convert key to rgb to then find closest distance
+            # bytes.fromhex?
+            print(hex, " keep lookin'")
 
 if __name__ == '__main__':
 
