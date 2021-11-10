@@ -11,4 +11,6 @@ print(brand)
 for row in rows[1:]:
     idx, *names = row
     brand = dict((zip(header[1:], names)))
-    print(idx, " ", brand)
+    # catalog = dict((zip(idx, brand)))
+    print(idx, ' ', brand)
+# print(catalog)
