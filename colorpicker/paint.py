@@ -17,12 +17,8 @@ class Paint:
         header = rows[0]
         for row in rows[1:]:
             idx, *names = row
-            for name in names:
-                brand.fromkeys(header[1:], name)
-                # if name == '-':
-                #     continue
-                # catalog.setdefault(color, []).append(cls(color, name, idx))
-                catalog.setdefault(idx, []).append(cls(color, brand, idx))
+            brand = dict((zip(header[1:], names)))
+            catalog.update({idx: brand})
         return catalog
 
 

@@ -22,16 +22,13 @@ def main() -> None:
 
     parser.add_argument("--input-image", "-i", type=str, help="Path to the input image.",default=None )
     parser.add_argument("--output-file", "-o", type=str, help="Path to write output colors",default=None)
-    parser.add_argument("--number-of-colors", "-n", type=int, default=16)
+    parser.add_argument("--number-of-colors", "-n", type=int, default=256)
 
     args = parser.parse_args()
 
     catalog = Paint.create_catalog('D:\PDM_Class\colorpicker\colorpicker\data\dakka.csv')
 
-    for k,v in catalog.items():
-        print(k, v)
-    # exit()
-    print(args)
+    # print(args)
     # 0. Retrieve minaute paint colors from an image
     # 1. Get an image, either url or via path.
     # 2. Build a palette from source image.
@@ -51,9 +48,10 @@ def main() -> None:
     for color in palette.colors(args.number_of_colors):
         r,g,b = color
         hex = f"{r:02x}{g:02x}{b:02x}".upper()
-        print(hex in k)
-
-        # print(hex)
+        if catalog.get(hex):
+            print(catalog.get(hex), " is in dictionary")
+        else:
+            print(hex, " keep lookin'")
 
 if __name__ == '__main__':
 
