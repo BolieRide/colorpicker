@@ -12,14 +12,17 @@ class Paint:
     def create_catalog(cls, path: Union[Path, str] = None) -> dict:
         path = Path(path or paint_data)
         catalog = {}
+        brand = {}
         rows = list(csv.reader(path.open()))
         header = rows[0]
         for row in rows[1:]:
-            idx, color, *names = row
+            idx, *names = row
             for name in names:
-                if name == '-':
-                    continue
-                catalog.setdefault(color, []).append(cls(color, name, idx))
+                brand.fromkeys(header[1:], name)
+                # if name == '-':
+                #     continue
+                # catalog.setdefault(color, []).append(cls(color, name, idx))
+                catalog.setdefault(idx, []).append(cls(color, brand, idx))
         return catalog
 
 
