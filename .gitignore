@@ -9,4 +9,6 @@ colors.txt
 *.png
 *.csv
 *.html
-
+/Paintconversion_files
+.ipynb_checkpoints
+*.ipynb

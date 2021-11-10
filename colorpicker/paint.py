@@ -28,3 +28,6 @@ class Paint:
         self.color = color
         self.name = name
         self.line = line
+
+    def distance(self, other: tuple[int, int, int]):
+        pass

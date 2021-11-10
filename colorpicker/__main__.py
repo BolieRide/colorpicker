@@ -27,8 +27,9 @@ def main() -> None:
     args = parser.parse_args()
 
     catalog = Paint.create_catalog('D:\PDM_Class\colorpicker\colorpicker\data\dakka.csv')
-    # for k,v in catalog.items():
-    #     print(k, v)
+
+    for k,v in catalog.items():
+        print(k, v)
     # exit()
     print(args)
     # 0. Retrieve minaute paint colors from an image
@@ -39,7 +40,7 @@ def main() -> None:
     # 5. Print list of colors and matching paints.
     # 6. (Optional) Matches colors on image with legend to specific paints
 
-
+    
     palette = KPalette(args.input_image)
 
     if args.output_file:
@@ -48,7 +49,11 @@ def main() -> None:
         output_file = sys.stdout
 
     for color in palette.colors(args.number_of_colors):
-        print(color)
+        r,g,b = color
+        hex = f"{r:02x}{g:02x}{b:02x}".upper()
+        print(hex in k)
+
+        # print(hex)
 
 if __name__ == '__main__':
 

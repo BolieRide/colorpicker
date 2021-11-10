@@ -24,7 +24,7 @@ class Palette:
     def colors(self, ncolors: int=None) -> List[Tuple[int, int, int, int]]:
 
         colors = self.image.getcolors(maxcolors=self.image.width*self.image.height)
-        sorted(colors, key=lambda item : item[0], reverse=True)
+        sorted(colors, key=lambda item: item[0], reverse=True)
         if ncolors is None:
             return [color for count, color in colors]
         return [color for count, color in colors][:ncolors]
