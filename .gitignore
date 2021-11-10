@@ -6,9 +6,8 @@ test_pandas.py
 colorpicker/__pycache__/
 colors.txt
 *.jpg
-*.png
-*.csv
 *.html
+*.png
 /Paintconversion_files
 .ipynb_checkpoints
 *.ipynb

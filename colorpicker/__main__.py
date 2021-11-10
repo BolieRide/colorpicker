@@ -51,7 +51,7 @@ def main() -> None:
         if catalog.get(hex):
             print(catalog.get(hex), " is in dictionary")
         else:
-            print(hex, " keep lookin'")
+            r2, g2, b2 =
 
 if __name__ == '__main__':
 
