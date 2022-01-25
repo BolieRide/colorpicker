@@ -17,14 +17,16 @@ class Paint:
         brands = rows[0]
 
         for row in rows[1:]:
-            color_int, *names = row
-            color_tuple = tuple(color_int.to_bytes(byteorder="big"))
-            color_str = str(hex(color_int))
+            color_raw, *names = row
+            # color_tuple = tuple(color_raw.to_bytes(byteorder="big"))
+            color_tuple = int(color_raw, 16).to_bytes(4, byteorder="big")
+            color_str = str(int(color_raw, 16))
             for column, name in enumerate(names, 1):
                 if name == "-":
                     continue
-                paint = cls(color_tuple, name, brands[row_number])
+                paint = cls(color_tuple, name, brands[column])
                 catalog.setdefault(color_str, []).append(paint)
+                print(catalog)
         return catalog
 
     @classmethod

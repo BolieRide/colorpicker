@@ -1,18 +1,18 @@
 Hex Code,New Citadel,Old Citadel,Vallejo Game Color,Vallejo Model Color,Reaper Master,Privateer Press P3,Army Painter,Coat D arms,Scale 75
-0,Abaddon Black,Chaos Black,Chaos Black / Black ,Black ,Pure Black ,Thamar Black,Matt Black ,Black ,-
-31,-,Midnight Blue,Night Blue ,Dark sea blue,Ultramarine Shadow ,-,-,-,-
-4261,Stegadon Scale Green,-,-,-,-,-,-,-,-
-5221,Caliban Green,Dark Angels Green,Dark Green ,Deep Green ,Pine Green 2 ,Gnarls Green 2,Angel Green ,Dark Elf Green ,-
-8660,Kabalite Green,-,-,-,-,-,-,-,-
-10100,Abaddon Black,-,-,-,-,-,-,-,-
-10101,-,-,-,Glossy Black,-,-,-,-,-
-24381,-,-,Magic Blue,-,-,-,-,-,-
-40707,-,-,-,-,-,Thamar Black,-,-,-
-43667,-,-,-,Blue,-,-,-,-,-
-56976,Sotek Green,-,-,-,-,-,-,-,-
-83251,-,-,-,-,-,-,Deep Blue ,-,-
-91500,Balor Brown,-,-,-,-,-,-,-,-
-94345,Incubi Darkness,-,-,-,-,-,-,-,-
+000000,Abaddon Black,Chaos Black,Chaos Black / Black ,Black ,Pure Black ,Thamar Black,Matt Black ,Black ,-
+000031,-,Midnight Blue,Night Blue ,Dark sea blue,Ultramarine Shadow ,-,-,-,-
+004261,Stegadon Scale Green,-,-,-,-,-,-,-,-
+005221,Caliban Green,Dark Angels Green,Dark Green ,Deep Green ,Pine Green 2 ,Gnarls Green 2,Angel Green ,Dark Elf Green ,-
+008660,Kabalite Green,-,-,-,-,-,-,-,-
+010100,Abaddon Black,-,-,-,-,-,-,-,-
+010101,-,-,-,Glossy Black,-,-,-,-,-
+024381,-,-,Magic Blue,-,-,-,-,-,-
+040707,-,-,-,-,-,Thamar Black,-,-,-
+043667,-,-,-,Blue,-,-,-,-,-
+056976,Sotek Green,-,-,-,-,-,-,-,-
+083251,-,-,-,-,-,-,Deep Blue ,-,-
+091500,Balor Brown,-,-,-,-,-,-,-,-
+094345,Incubi Darkness,-,-,-,-,-,-,-,-
 108473,-,Dark Green Ink,Green Ink ,-,-,-,-,-,-
 126232,-,-,-,-,-,Gnarls Green ,-,-,-
 136232,-,-,-,-,-,-,Greenskin,-,-
@@ -75,13 +75,13 @@ Hex Code,New Citadel,Old Citadel,Vallejo Game Color,Vallejo Model Color,Reaper M
 959980,-,-,-,Stone Grey,-,-,-,-,-
 991115,Mephiston Red,Mechrite Red,Heavy Red ,Red ,Clotted Red ,-,Vampire Red ,-,-
 999999,Dawnstone,Codex Grey,Cold Grey ,Basalt Grey ,Rainy Grey ,-,Uniform Grey ,-,Artic Blue Matt
-7.05E+50,Baneblade Brown,Khemri Brown,Heavy Brown ,Green Brown,Woodstain Brown ,-,-,-,Arabic Shadow Matt
-3.84E+51,Waaagh! Flesh,Orkhide Shade,Heavy Blackgreen ,Black Green ,Jungle Moss ,-,-,-,Black
-4.54E+52,Mechanicus Standard Grey,-,-,-,-,-,-,-,-
-2.73E+53,Drakenhof Nightshade,Asurmen Blue Wash,Blue Shade Wash ,-,-,-,Blue Tone Ink ,-,-
-7.56E+62,-,-,-,-,-,-,Cultist Robe,-,-
-8.27E+63,-,-,-,Green Grey,-,-,-,-,-
-8.28E+97,-,-,Stonewall Grey,-,-,-,-,-,-
+937F6D,Baneblade Brown,Khemri Brown,Heavy Brown ,Green Brown,Woodstain Brown ,-,-,-,Arabic Shadow Matt
+384E49,Waaagh! Flesh,Orkhide Shade,Heavy Blackgreen ,Black Green ,Jungle Moss ,-,-,-,Black
+3D4B4D,Mechanicus Standard Grey,-,-,-,-,-,-,-,-
+125899,Drakenhof Nightshade,Asurmen Blue Wash,Blue Shade Wash ,-,-,-,Blue Tone Ink ,-,-
+756e60,Stormvermin Fur,-,Khaki,-,-,-,Cultist Robe,-,-
+827e61,-,-,-,Green Grey,-,-,-,-,-
+828e95,-,-,Stonewall Grey,-,-,-,-,-,-
 003B1D,Caliban Green,-,-,-,-,-,-,-,-
 005A61,-,-,-,-,-,Coal Black ,-,-,-
 00609A,-,-,-,-,-,-,Viking Blue,-,-
@@ -247,7 +247,7 @@ Hex Code,New Citadel,Old Citadel,Vallejo Game Color,Vallejo Model Color,Reaper M
 82C59C,Sybarite Green,Vile Green,Foul Green ,Park Green Flat ,-,-,-,-,-
 83B5B2,-,-,-,Pale Blue,-,-,-,-,-
 848A66,Death Guard Armor,-,-,-,-,-,-,-,-
-849B63|,Nurgling Green,Rotting Flesh,Dead Flesh ,Green sky,Pale Olive ,Jack Bone,Necrotic Flesh,Putrid Green ,-
+849B63,Nurgling Green,Rotting Flesh,Dead Flesh ,Green sky,Pale Olive ,Jack Bone,Necrotic Flesh,Putrid Green ,-
 84C2A9,Gauss Blaster Green ,-,-,-,-,-,-,-,-
 84C3AA,Gauss Blaster Green,-,-,-,-,-,-,-,-
 853F3D,-,-,-,Cavalry Brown,-,-,-,-,-

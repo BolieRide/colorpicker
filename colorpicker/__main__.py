@@ -53,7 +53,7 @@ def main() -> None:
         else:
             # convert key to rgb to then find closest distance
             # bytes.fromhex?
-            print(hex, " keep lookin'")
+            print(hex, " keep lookin' because it ain't here. ")
 
 if __name__ == '__main__':
 
